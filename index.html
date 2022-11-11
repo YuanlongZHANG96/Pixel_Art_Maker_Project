@@ -4,6 +4,11 @@
     <title>Pixel Art Maker (Plus!)</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A Simple Pixel Maker App">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Yuanlong Zhang (based on Udacity's template)">
 </head>
 <body>
 <h1>Pixel Art Maker--Plus!</h1>
@@ -11,13 +16,14 @@
 <div style="display:flex; flex-direction: row; justify-content:space-evenly; background-color:#85C1E9" id="D1">
     <div id="DH">
         <h4>Let's Configure Your Canvas!</h4>
+        <!--To avoid the grid too large or too small, we set up the max and min value-->
         <form id="sizePicker">
             Grid Height:
-            <input type="number" id="inputHeight" name="height" min="1" value="25">
+            <input type="number" id="inputHeight" name="height" min="5" max="50" value="25">
             Grid Width:
-            <input type="number" id="inputWidth" name="width" min="1" value="25">
+            <input type="number" id="inputWidth" name="width" min="5" max="50" value="25">
             Cell Size (px):
-            <input type="number" id="inputSize" name="size" min="1" value="15">
+            <input type="number" id="inputSize" name="size" min="5" max="30" value="15">
             <input type="submit">
         </form>
     </div>
