@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker (Plus!)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Pixel Art Maker--Plus!</h1>
+<p> version: 1.0 </p>
+<div style="display:flex; flex-direction: row; justify-content:space-evenly; background-color:#85C1E9" id="D1">
+    <div id="DH">
+        <h4>Let's Configure Your Canvas!</h4>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="25">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="25">
+            Cell Size (px):
+            <input type="number" id="inputSize" name="size" min="1" value="15">
+            <input type="submit">
+        </form>
+    </div>
+    <div id="D2">
+        <h4 id="colorHeader">Pick A Color</h4>
+        <input type="color" id="colorPicker">
+    </div>
+    <div id="D3">
+        <h4 id="switchTools">Switch to Eraser</h4>
+        <button id="eraser">Eraser</button>
+    </div>
+    <div id="D4">
+        <h4 id="reset">Reset My Work</h4>
+        <button id="resetButton">Reset</button>
+    </div>
+</div>
+
+<h2>Start Your Design Here! :)</h2>
+<table id="pixelCanvas"></table>
+
+<script src="designs.js"></script>
+</body>
+</html>
